@@ -4,7 +4,7 @@ body {
     grid-template-columns: 20% 60% 20%;
     grid-template-areas:
        "header header header"
-       "nav nav nav"
+       "side2 nav side"
        "side2 content side"
        "footer footer footer";
 }
