@@ -1,0 +1,70 @@
+body {
+
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+       "header header header"
+       "nav nav nav"
+       "side2 content side"
+       "footer footer footer";
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+main {
+    grid-area: content;
+}
+aside {
+    grid-area: side;
+}
+aside2{
+    gride-area: side2;
+}
+footer {
+    grid-area: footer;
+}
+#footer {
+    display: flex;  /* Flexcontainer */
+    flex-direction: row; /* Anordnung in Spalten */
+    flex-wrap: nowrap;  /* kein Umbruch der Flex-Elemente erlauben */
+    justify-content: space-between; /* Leerraum zwischen den Flex-Elemente verteilen */
+
+}
+ul {
+    display: flex;  /* Flexcontainer */
+    flex-direction: row; /* Anordnung in Spalten */
+    flex-wrap: nowrap;  /* kein Umbruch der Flex-Elemente erlauben */
+    justify-content: space-between; /* Leerraum zwischen den Flex-Elemente verteilen */
+
+}
+h1, h2, h3, h4, h5, h6 {font-family: Helvetica, sans-serif}
+li {list-style: none}
+#bild1 {float: none; padding: 5px}
+img {float: left; padding-right: 15px; padding-bottom: 5px;}
+header {background: white; margin: 10px; padding: 10px}
+main {background: white; margin: 10px; padding: 10px}
+footer{background: white; margin: 10px; padding: 10px}
+nav {background: hotpink; margin: 10px; padding: 10px}
+aside {background: white; margin: 10px; padding: 10px}
+
+@media screen and (max-width:900px){
+    body {
+        grid-template-columns: 100%;
+
+        grid-template-areas:
+           "header"
+           "nav"
+           "content"
+           "side"
+           "footer";
+
+    }
+    #footer {
+
+        flex-direction: column;
+
+    }
+}
