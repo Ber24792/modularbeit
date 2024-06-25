@@ -83,6 +83,7 @@ body {background-color: #EBB4C3}
            "footer";
 
     }
+    .nav > ul {flex-direction: column}
     #footer {
 
         flex-direction: column;
